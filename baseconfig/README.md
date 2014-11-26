@@ -13,5 +13,5 @@ Example with mysql :
 docker run --name my-sql-container -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql
 
 # get ssh access to /var/lib/mysql of this sql container thru
-docker run -d --volumes-from my-sql-container -e ROOTPWD=your-secret-pwd -e SSHPORT=youchoose -p youchoose:youchoose yvnicolas/sandbox:baseconfig
+docker run -d --volumes-from my-sql-container -e ROOTPWD=your-secret-pwd -e SSHPORT=youchoose -p youchoose:youchoose yvnicolas/sandbox:basecontainer
 ```
