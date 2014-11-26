@@ -2,7 +2,7 @@ This creates an image to configure an ssh accessible base container with emacs i
 
 To use it do
 ```
-docker run -d -e ROOTPWD=your-secret-pwd -e SSHPORT=youchoose -p youchoose:youchoose yvnicolas/sandbox:baseconfig
+docker run -d -e ROOTPWD=your-secret-pwd -e SSHPORT=youchoose -p youchoose:youchoose yvnicolas/sandbox:basecontainer
 ```
 
 As best practice for Docker recommands the use of `VOLUME` in Dockerfile for exposing user data which is the case for most official images, this image can be used to get an ssh access to service containers.
